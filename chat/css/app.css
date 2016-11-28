@@ -1,0 +1,9 @@
+.navbar-default {
+	background-color: rgba(248, 248, 248, 0.5);
+	border: none;
+}
+
+.showSupport {
+	width: 140px;
+	float: right;
+}

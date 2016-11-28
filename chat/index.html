@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>浏览器消息通知</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bower_components/artDialog/css/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="css/mq.css">
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+
+	<body class="black">
+		<div id="bgAllImage"><img class="bgAllImage" src="img/1.jpg"></div>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					     </button>
+					<a class="navbar-brand" href="#">Gristar</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav text-center c-nav-center">
+						<li class="active"><a href="#">浏览器消息通知</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">信息 <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a class="showSupport" href="javascript:;">浏览器支持</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="wrap">
+			<!--<a class="showSupport btn btn-default" href="javascript:;">浏览器支持情况</a>-->
+			<div id="container" class="container" style="display: block;">
+				<div class="panel chat-panel" id="panel-5" cmd="void" style="transition: -webkit-transform 0.4s cubic-bezier(0, 1, 0, 1); transform: translate3d(0px, 0px, 0px); display: block;">
+					<header id="panelHeader-5" class="panel_header">
+						<h1 id="panelTitle-5" class="text_ellipsis padding_20">聊天框</h1>
+					</header>
+					<div id="panelBodyWrapper-5" class="panel_body_container" style="top: 45px; bottom: 50px; overflow: hidden;overflow-y: auto;">
+						<div id="panelBody-5" class="panel_body chat_container" style="transition-property: -webkit-transform; transform-origin: 0px 0px 0px; transform: translate(0px, 0px) scale(1) translateZ(0px);">
+							<!--<div class="chat_time"><span>19:20</span></div>
+							<div class="chat_content_group buddy  " _sender_uin="2218588865">
+								<img class="chat_content_avatar" src="" width="40px" height="40px">
+								<p class="chat_nick">烟</p>
+								<p class="chat_content ">222</p>
+							</div>
+							<div class="chat_content_group self  " _sender_uin="1129380093">
+								<img class="chat_content_avatar" src="" width="40px" height="40px">
+								<p class="chat_nick">You&amp;I</p>
+								<p class="chat_content ">444</p>
+							</div>-->
+						</div>
+					</div>
+					<footer id="panelFooter-5" class="chat_toolbar_footer">
+						<div class="chat_toolbar">
+							<div id="add_face_btn" class="btn btn_face">
+								<span class="btn_img"></span>
+							</div>
+							<textarea id="chat_textarea" class="input input_white chat_textarea"></textarea>
+							<button id="send_chat_btn" class="btn btn_small btn_blue" cmd="sendMsg">
+						        <span class="btn_text">发送</span>
+						    </button>
+							<textarea id="" class="input input_white chat_textarea hidden_textarea" style="height: 32px; width: 564px;"></textarea>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="display: none;" id="tmp-msg">
+			<div class="chat_time"><span>19:20</span></div>
+			<div class="chat_content_group buddy  " _sender_uin="2218588865">
+				<img class="chat_content_avatar" src="img/nana.gif" width="40px" height="40px">
+				<p class="chat_nick">娜娜</p>
+				<p class="chat_content "></p>
+			</div>
+		</div>
+		<div style="display: none;" id="tmp-msg-send">
+			<div class="chat_content_group self  " _sender_uin="1129380093">
+				<img class="chat_content_avatar" src="img/me.png" width="40px" height="40px">
+				<p class="chat_nick">You&amp;I</p>
+				<p class="chat_content "></p>
+			</div>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/artDialog/dist/dialog-min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+
+</html>
